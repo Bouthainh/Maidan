@@ -6,6 +6,8 @@
      <head>
          <meta charset="UTF-8"> 
          <title> Get Started </title>
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <link rel="stylesheet" href="../CSS/Style.css">
      </head>
 
      <body>
@@ -26,27 +28,28 @@
 
          <!--Dispaly Question, Type of client?-->
          
-         <section class="ChooseClientType?"> 
+         <section class="ChooseClientType"> 
              <h4> To better assist you, please let us know who you are: </h4> 
          </section>
 
          <!--First form: Ministry of Sport Representative form -->
          <!--I used summary and details elements, to hide the form and only show it when clicking on the summary-->
          <section class="MSRepresentativeForm">
+            <h3>Ministry of Sport Representative</h3>
             <details>
                 <summary>Ministry of Sport Representative</summary>
                 <form method="get" action="#"> 
                     <p> This form is for Ministry Representatives </p>
                     
-                    <label for="name">Enter your Full Name:</label>
+                    <label for="rep-name">Enter your Full Name:</label>
                     <input type="text" id="rep-name" name="rep-name" required autofocus minlength="7" pattern="^[A-Za-z\s]{7,50}$"
                      title="Full Name must be at least 7 characters long and contain only letters and spaces"><br>
                      
                     <label for="email-rep">Enter your Email:</label>
-                    <input type="email" id="email" name="email" required pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"><br>
+                    <input type="email" id="email-rep" name="email-rep" required pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"><br>
 
                     <input type="checkbox" id="rep-confirmation" name="rep-confirmation" value="rep-confirmation" required>
-                    <label for="confirmation">* By selecting this option, I confirm that I am an <strong>official representative</strong> accept full responsibility for my actions</label><br>
+                    <label for="rep-confirmation">* By selecting this option, I confirm that I am an <strong>official representative</strong> accept full responsibility for my actions</label><br>
                     <input type="submit" value="Submit">
 
              </form> </details>     
@@ -55,6 +58,7 @@
          <!-- Second form: Stadium Administrator -->
          <!--I used summary and details elements, to hide the form and only show it when clicking on the summary-->
          <section class="StadiumAdminForm">
+            <h3>Stadium Administrator</h3>
              <details>
                 <summary>Stadium Administrator</summary>
                 <form method="get" action="#">
@@ -74,6 +78,7 @@
                      
                      <label for="position">Please Selec Your Position:</label>
                      <select id="position" name="position" required>
+                        <option value="" disabled selected>Select your position</option>
                         <!-- Manages staff, bookings, and overall stadium operations -->
                         <option value="manager">Stadium Manager</option>
                         <!-- Handles maintenance requests, technical and facility management -->
@@ -87,6 +92,10 @@
             </form>
         </details>
     </section>
+
+    <footer>
+        <p>&copy; 2025 Maidan. All Rights Reserved.</p>
+     </footer>
 
 
         
