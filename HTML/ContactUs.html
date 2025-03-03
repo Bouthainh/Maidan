@@ -1,67 +1,28 @@
-<!-- This page serves as a contact us page, 
- the page collects users’ information and submits it to the backend  -->
-
- <!DOCTYPE html>
- <html lang="en">
- <head>
+ <!-- This page serves as a contact us page, 
+ to help the user to contact us whenever needed -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
- </head>
-
- <body> 
-    <h1>Contact Us</h1>
-    <h2>Fill your information so we can reach you</h2>
+    <link rel="stylesheet" href="../CSS/Style.css">
+</head>
+<body> 
+    <header>
+        <h1>Contact Us</h1>
+        <h4>Fill your information so we can reach you</h4>
+    </header>
 
     <nav>
         <a href="IndexPage.html">Home</a>
         <a href="AboutUs.html">About us</a>
         <a href="ContactUs.html">Contact us</a>
         <a href="GetStarted.html">Get Started</a>
-     </nav>
-     
+    </nav>
+
+    <!--A Form to collect the user information so they can contact with us -->
     <form action="/submit" method="POST">
-        <div>
-            <label for="firstName">First Name:</label>
-            <input type="text" id="firstName" name="firstName" required>
-        </div>
-        <br>
-
-        <div>
-            <label for="lastName">Last Name:</label>
-            <input type="text" id="lastName" name="lastName" required>
-        </div>
-        <br>
-
-        <div>
-            <label for="gender">Gender:</label>
-            <select id="gender" name="gender" required>
-                <option value="">Select</option>
-                <option value="male">Male</option>
-                <option value="female">Female</option>
-            </select>
-        </div>
-        <br> 
-
-        <div>
-            <label for="mobile">Mobile:</label>
-            <input type="tel" id="mobile" name="mobile" required>
-        </div>
-        <br>
-
-        <div>
-            <label for="dateOfBirth">Date of Birth:</label>
-            <input type="date" id="dateOfBirth" name="dateOfBirth" required>
-        </div>
-        <br>
-
-        <div>
-            <label for="email">Email Address:</label>
-            <input type="email" id="email" name="email" required>
-        </div>
-        <br> 
-
-        <!--Select Language-->
         <div>
             <label for="language">Language of Communication:</label>
             <select id="language" name="language" required>
@@ -79,19 +40,53 @@
                 <option value="italian">Italian</option>
                 <option value="korean">Korean</option>
             </select>
+        </div><br>
+
+        <div>
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" pattern="^[A-Za-z\s]{2,50}$" required
+            title="First Name must contain only letters and spaces, and be between 2 and 50 characters long."><br>
         </div>
-        <br>
-
-
-        <div style="display: flex; align-items: flex-start;">
-            <label for="message" style="margin-right: 10px;">Message:</label> 
-            <textarea id="message" name="message" rows="5" required style="width: 200px; margin-left: 0;"></textarea> 
+        <div>
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" pattern="^[A-Za-z\s]{2,50}$" required
+            title="Last Name must contain only letters and spaces, and be between 2 and 50 characters long."><br>
         </div>
-        <br>
+        <div>
+            <label for="mobile">Mobile:</label>
+            <input type="tel" id="mobile" name="mobile" pattern="^\d{10}$" required
+            title="Mobile Number must contain exactly 10 digits."><br>
+        </div><br>
 
+        <div>
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="">Select</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+        </div><br> 
 
-        <button type="submit">Submit</button>
+        <div>
+            <label for="dateOfBirth">Date of Birth:</label>
+            <input type="date" id="dateOfBirth" name="dateOfBirth" required>
+        </div><br>
+
+        <div>
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email"  pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required>
+        </div><br> 
+    <!-- A Spact for the user to write down what they want -->
+        <div>
+            <label for="message">Message:</label> 
+            <textarea id="message" name="message" rows="5" required></textarea> 
+        </div><br>
+
+        <input type="submit" value="Submit">
     </form>
 
- </body>
- </html>
+    <footer>
+        <p>&copy; 2025 Maidan. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
