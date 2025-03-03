@@ -247,3 +247,85 @@ form button:hover {
     background-color: #e7c9e7;
     color: #000000;
 }
+
+/* Table styling */
+header {
+    background: linear-gradient(to right, #2E3569, #1B2045);
+    padding: 80px 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #e7c9e7; 
+}
+
+header p {
+    font-size: 1.3rem;
+    margin-top: 10px;
+    opacity: 0.9;
+    color: #e7c9e7; 
+}
+
+section {
+    padding: 60px 20px;
+    margin: 40px auto;
+    width: 80%;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(8px);
+    transition: transform 0.3s ease-in-out;
+}
+
+section:hover {
+    transform: scale(1.02);
+}
+
+section h2 {
+    font-size: 2.3rem;
+    color: #e7c9e7;
+    margin-bottom: 15px;
+}
+
+section p {
+    font-size: 1.1rem;
+    color: #dcdcdc;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: auto;
+}
+
+table {
+    width: 80%;
+    margin: 30px auto;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+table th {
+    background-color: #1B2045;
+    color: white;
+    font-size: 1.2rem;
+}
+
+table td {
+    background-color: #2E3569;
+    color: #ffffff;
+}
+
+table a {
+    color: #e7c9e7;
+    text-decoration: none;
+}
+
+table a:hover {
+    text-decoration: underline;
+}
