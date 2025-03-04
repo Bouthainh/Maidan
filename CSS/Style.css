@@ -230,6 +230,19 @@ form textarea {
     color: #ffffff;
 }
 
+select {
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    border: 1px solid #ccc;
+    outline-color: #e7c9e7;
+}
+
+select option {
+    background: #fff;
+    color: #1B2045;
+}
+
+
 form input[type="submit"],
 form button {
     width: 120px;
