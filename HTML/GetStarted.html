@@ -7,108 +7,112 @@ providing both navigation to other sections and an overview of the website's obj
      Gala AlRajhi | 2211312 
      Sultana Zagzoog | 2211634 -->
 
-<!DOCTYPE html>
-<html lang="EN">
-
-<head>
-    <meta charset="UTF-8">
-    <title> Get Started </title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../CSS/Style.css">
-</head>
-
-<body>
-    <!--Header -->
-    <!-- display page purpose-->
-    <header>
-        <h3> Get Started with Maidan</h3>
-        <h4> Welcome to Maidan ... The First Saudi Stadium Management Site! </h4>
-        <p> We are dedicated to providing you with the best stadium services</p>
-    </header>
-
-    <nav>
-        <a href="IndexPage.html">Home</a>
-        <a href="AboutUs.html">About us</a>
-        <a href="ContactUs.html">Contact us</a>
-        <a href="GetStarted.html">Get Started</a>
-    </nav>
-
-    <!--Dispaly Question, Type of client?-->
-    <section class="ChooseClientType">
-        <h4> To better assist you, please let us know who you are: </h4>
-    </section>
-
-    <!--First form: Ministry of Sport Representative form -->
-    <!--I used summary and details elements, to hide the form and only show it when clicking on the summary-->
-    <section class="MSRepresentativeForm">
-        <h3>Ministry of Sport Representative</h3>
-        <details>
-            <summary>Ministry of Sport Representative</summary>
-            <form method="get" action="#">
-                <p> This form is for Ministry Representatives </p>
-
-                <label for="rep-name">Enter your Full Name:</label>
-                <input type="text" id="rep-name" name="rep-name" required autofocus minlength="7"
-                    pattern="^[A-Za-z\s]{7,50}$"
-                    title="Full Name must be at least 7 characters long and contain only letters and spaces"><br>
-
-                <label for="email-rep">Enter your Email:</label>
-                <input type="email" id="email-rep" name="email-rep" required
-                    pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"><br>
-
-                <input type="checkbox" id="rep-confirmation" name="rep-confirmation" value="rep-confirmation" required>
-                <label for="rep-confirmation">* By selecting this option, I confirm that I am an <strong>official
-                        representative</strong> accept full responsibility for my actions</label><br>
-                <input type="submit" value="Submit">
-            </form>
-        </details>
-    </section>
-
-    <!-- Second form: Stadium Administrator -->
-    <!--I used summary and details elements, to hide the form and only show it when clicking on the summary-->
-    <section class="StadiumAdminForm">
-        <h3>Stadium Administrator</h3>
-        <details>
-            <summary>Stadium Administrator</summary>
-            <form method="get" action="#">
-                <p> This form is for Stadium Administrators </p>
-
-                <label for="admin-name">Enter your Full Name:</label>
-                <input type="text" id="admin-name" name="admin-name" required minlength="7"
-                    pattern="^[A-Za-z\s]{7,50}$"
-                    title="Full Name must be at least 7 characters long and contain only letters and spaces"><br>
-
-                <label for="stadium-name">Enter Stadium Name:</label>
-                <input type="text" id="stadium-name" name="stadium-name" required minlength="5"
-                    pattern="^[A-Za-z\s]{5,90}$"
-                    title="Stadium Name must be at least 5 characters long and contain only letters and spaces"><br>
-
-                <label for="email-admin">Enter your Email:</label>
-                <input type="email" id="email-admin" name="email-admin" required
-                    pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"><br>
-
-                <label for="position">Please Select Your Position:</label>
-                <select id="position" name="position" required>
-                    <option value="" disabled selected>Select your position</option>
-                    <!-- Manages staff, bookings, and overall stadium operations -->
-                    <option value="manager">Stadium Manager</option>
-                    <!-- Handles maintenance requests, technical and facility management -->
-                    <option value="operations">Operations Director</option>
-                </select><br>
-
-                <input type="checkbox" id="admin-confirmation" name="admin-confirmation" value="admin-confirmation"
-                    required>
-                <label for="admin-confirmation">* By selecting this option, I confirm that I am an <strong>official
-                        administrator</strong> and accept full responsibility for my actions</label><br>
-                <input type="submit" value="Submit">
-            </form>
-        </details>
-    </section>
-
-    <footer>
-        <p>&copy; 2025 Maidan. All Rights Reserved.</p>
-    </footer>
-
-</body>
-
-</html>
+     <!DOCTYPE html>
+     <html lang="EN">
+     
+     <head>
+         <meta charset="UTF-8">
+         <title> Get Started </title>
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <link rel="stylesheet" href="../CSS/Style.css">
+     </head>
+     
+     <body>
+         <!--Header -->
+         <!-- display page purpose-->
+         <header>
+             <img src="../Images/SubHeader3.png" alt="The Headr and Logo">
+             <h1> Get Started</h1>
+         </header>
+     
+         <nav>
+             <a href="IndexPage.html">Home</a>
+             <a href="AboutUs.html">About us</a>
+             <a href="ContactUs.html">Contact us</a>
+             <a href="GetStarted.html">Get Started</a>
+         </nav>
+     
+         <h4> Welcome to Maidan ... The First Saudi Stadium Management Site! </h4>
+         <p> We are dedicated to providing you with the best stadium services</p>
+     
+         <!--Dispaly Question, Type of client?-->
+         <section class="ChooseClientType">
+             <h4> To better assist you, please let us know who you are: </h4>
+         </section>
+     
+         <!--First form: Ministry of Sport Representative form -->
+         <!--I used summary and details elements, to hide the form and only show it when clicking on the summary-->
+         <section class="MSRepresentativeForm">
+             <h3>Ministry of Sport Representative</h3>
+             <details>
+                 <summary>Ministry of Sport Representative</summary>
+                 <form method="get" action="#">
+                     <p> This form is for Ministry Representatives </p>
+     
+                     <label for="rep-name">Enter your Full Name:</label>
+                     <input type="text" id="rep-name" name="rep-name" required autofocus minlength="7"
+                         pattern="^[A-Za-z\s]{7,50}$"
+                         title="Full Name must be at least 7 characters long and contain only letters and spaces"><br>
+     
+                     <label for="email-rep">Enter your Email:</label>
+                     <input type="email" id="email-rep" name="email-rep" required
+                         pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"><br>
+     
+                     <input type="checkbox" id="rep-confirmation" name="rep-confirmation" value="rep-confirmation" required>
+                     <label for="rep-confirmation">* By selecting this option, I confirm that I am an <strong>official
+                             representative</strong> accept full responsibility for my actions</label><br>
+                     <input type="submit" value="Submit">
+                 </form>
+             </details>
+         </section>
+     
+         <!-- Second form: Stadium Administrator -->
+         <!--I used summary and details elements, to hide the form and only show it when clicking on the summary-->
+         <section class="StadiumAdminForm">
+             <h3>Stadium Administrator</h3>
+             <details>
+                 <summary>Stadium Administrator</summary>
+                 <form method="get" action="#">
+                     <p> This form is for Stadium Administrators </p>
+     
+                     <label for="admin-name">Enter your Full Name:</label>
+                     <input type="text" id="admin-name" name="admin-name" required minlength="7"
+                         pattern="^[A-Za-z\s]{7,50}$"
+                         title="Full Name must be at least 7 characters long and contain only letters and spaces"><br>
+     
+                     <label for="stadium-name">Enter Stadium Name:</label>
+                     <input type="text" id="stadium-name" name="stadium-name" required minlength="5"
+                         pattern="^[A-Za-z\s]{5,90}$"
+                         title="Stadium Name must be at least 5 characters long and contain only letters and spaces"><br>
+     
+                     <label for="email-admin">Enter your Email:</label>
+                     <input type="email" id="email-admin" name="email-admin" required
+                         pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"><br>
+     
+                     <label for="position">Please Select Your Position:</label>
+                     <select id="position" name="position" required>
+                         <option value="" disabled selected>Select your position</option>
+                         <!-- Manages staff, bookings, and overall stadium operations -->
+                         <option value="manager">Stadium Manager</option>
+                         <!-- Handles maintenance requests, technical and facility management -->
+                         <option value="operations">Operations Director</option>
+                     </select><br>
+     
+                     <input type="checkbox" id="admin-confirmation" name="admin-confirmation" value="admin-confirmation"
+                         required>
+                     <label for="admin-confirmation">* By selecting this option, I confirm that I am an <strong>official
+                             administrator</strong> and accept full responsibility for my actions</label><br>
+                     <input type="submit" value="Submit">
+                 </form>
+             </details>
+         </section>
+     
+         <footer>
+             <img src="../Images/maidanlogo.PNG" alt="Maidan Logo ">
+             <p>&copy; 2025 Maidan. All Rights Reserved.</p>
+         </footer>
+     
+     </body>
+     
+     </html>
+     
