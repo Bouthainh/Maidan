@@ -4,7 +4,7 @@
    Gala AlRajhi | 2211312
    Sultana Zagzoog | 2211634 */
 
-   * {
+   this is my css  * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -202,8 +202,6 @@ article p {
     }
 }
 
-
-
 #SideDecore{
      padding-right:310px;
      max-height: 315px;
@@ -279,17 +277,58 @@ footer p {
 
 .ChooseClientType h4   {
     font-size: 1.5rem;
-    color: #e7c9e7;
+    color: #ffffff;
     margin-bottom: 15px;
+}
+
+/*GetStarted Forms */
+#Decore {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+    margin-bottom: 40px;
+    position: relative;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#SideDecore {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+    margin-bottom: 40px;
+    position: relative;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@media (max-width: 768px) {
+    #Decore,
+    #SideDecore {
+        max-width: 100%;
+        margin-bottom: 15px;
+        top: 10px;
+    }
 }
 .MSRepresentativeForm,
 .StadiumAdminForm {
     width: 50%;
-    margin: 20px 0 20px 50px; 
+    margin: 40px auto;
     padding: 20px;
-    background-color: #e7c9e7;
-    border-radius: 10px;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(8px);
+    transition: transform 0.3s ease-in-out;
+}
+
+.MSRepresentativeForm:hover,
+.StadiumAdminForm:hover {
+    transform: scale(1.02);
 }
 
 .MSRepresentativeForm h3,
@@ -297,15 +336,16 @@ footer p {
 .MSRepresentativeForm details,
 .StadiumAdminForm details {
     text-align: left;
-    color: #1B2045;
+    color: #f5f2f5;
 }
 
 .MSRepresentativeForm label,
 .StadiumAdminForm label {
-    display: block; 
+    display: block;
     font-weight: bold;
     margin-top: 10px;
-    color: #1B2045;
+    color: #f5f2f5;
+    text-align: left;
 }
 
 .MSRepresentativeForm input,
@@ -317,24 +357,49 @@ footer p {
     margin-top: 5px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
 }
 
-.MSRepresentativeForm input[type="checkbox"],
-.StadiumAdminForm input[type="checkbox"] {
-    width: auto;
-    margin-right: 5px;
+.MSRepresentativeForm select,
+.StadiumAdminForm select {
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    border: 1px solid #ccc;
+    outline-color: #e7c9e7;
+}
+
+.MSRepresentativeForm select option,
+.StadiumAdminForm select option {
+    background: #fff;
+    color: #1B2045;
 }
 
 .MSRepresentativeForm input[type="submit"],
 .StadiumAdminForm input[type="submit"] {
     width: 120px;
-    margin-top: 15px;
+    display: block;
+    margin: 20px auto 0 auto;
     background-color: #1B2045;
     color: white;
     border-radius: 5px;
     font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
 }
 
+.MSRepresentativeForm input[type="submit"]:hover,
+.StadiumAdminForm input[type="submit"]:hover {
+    background-color: #e7c9e7;
+    color: #000000;
+}
+/* Align checkbox to the left */
+.MSRepresentativeForm input[type="checkbox"],
+.StadiumAdminForm input[type="checkbox"] {
+    display: inline-block;
+    width: auto;
+    margin-left: 0;
+}
 /* my page styling */
 form {
     width: 50%;
@@ -468,4 +533,4 @@ table a {
 table a:hover {
     text-decoration: underline;
 }
- 
+
