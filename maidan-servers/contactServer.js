@@ -9,7 +9,6 @@ app.use(cors());
 
 const port = 3000;
 
-// إعداد الاتصال بقاعدة البيانات
 const pool = mysql.createPool({
   connectionLimit: 10,
   host: "localhost",
@@ -22,7 +21,6 @@ const pool = mysql.createPool({
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-// استقبال البيانات ومعالجتها
 app.post("/submit-contact", [
   body("firstName").isLength({ min: 2 }).matches(/^[A-Za-z\s]+$/),
   body("lastName").isLength({ min: 2 }).matches(/^[A-Za-z\s]+$/),
