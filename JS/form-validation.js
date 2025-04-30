@@ -1,3 +1,11 @@
+/*
+  Maidan Group Members:
+  Dimah Aloufi | 2210094
+  Bouthainh AlGarni | 2211249
+  Gala AlRajhi | 2211312
+  Sultana Zagzoog | 2211634
+*/
+
 console.log("JS file is connected");
 
 function showError(input, message) {
