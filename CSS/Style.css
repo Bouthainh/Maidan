@@ -4,316 +4,288 @@
    Gala AlRajhi | 2211312
    Sultana Zagzoog | 2211634 */
 
-   this is my css  * {
+   this is my css  
+   * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-}
+    font-family: Arial, Helvetica, sans-serif;}
 
 body {
     background-color: #1B2045; 
     color: #ffffff;
     text-align: center;
-}
-header {
-    background: linear-gradient(to right, #2E3569, #1B2045);
-    padding: 0px;
-    text-align: center;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    position: relative;
-    overflow: hidden; 
-}
+    font-family: Arial, Helvetica, sans-serif;
 
-header img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
 }
-
-header h5 {
-    font-size: 3rem;
-    text-align:left;
-    color: #fefefe;
-    position: absolute;
-    top: 50%;
-    right: 60%;  
-    transform: translateY(-50%);
-    z-index: 2; 
-}
-
-.changing-word {
-    display: inline-block;
-    animation: vibrate 0.2s infinite, changeWord 4s infinite;
-    color: #e7c9e7;
-}
-
-/* Text change effect */
-@keyframes changeWord {
-    0%, 30% {
-        content: "Feels";
+    header {
+        background: linear-gradient(to right, #2E3569, #1B2045);
+        padding: 0px;
+        text-align: center;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        position: relative;
+        overflow: hidden; 
     }
-    35%, 65% {
-        content: "Talks";
+    
+    header img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
-    70%, 100% {
-        content: "Communicates";
-    }
-}
-
-.changing-word::after {
-    content: "Feels";
-    animation: changeWord 4s infinite;
-}
-
-@media (max-width: 768px) {
+    
     header h5 {
-        font-size: 1rem;  
-        right: 5%;  
+        font-size: 3rem;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align:left;
+        color: #fefefe;
+        position: absolute;
+        top: 50%;
+        right: 60%;  
+        transform: translateY(-50%);
+        z-index: 2; 
     }
-}
-
-header h1 {
-    font-size: 55px;
-    font-weight: bold;
-    position: absolute;
-    text-align: left;
-    top: 40%;
-    right: 40%;  
-    z-index: 2; 
-}
-
-header p {
-    font-size: 1.3rem;
-    margin-top: 10px;
-    position: absolute;
-    text-align: center;
-    top: 60%;
-    right: 40%;  
-    left:40%;
-    z-index: 2; 
-
-}
-
-nav {
-    display: flex;
-    justify-content: center;
-    background-color: #1B2045;
-    padding: 15px 0;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-}
-
-nav a {
-    color: white;
-    font-size: 1.2rem;
-    text-decoration: none;
-    font-weight: bold;
-    padding: 10px 20px;
-    margin: 0 15px;
-    transition: all 0.3s ease-in-out;
-    border-radius: 5px;
-}
-
-nav a:hover {
-    background-color: #a154a175;
-    color: #000000;
-}
-section {
-    padding: 60px 20px;
-    margin: 40px auto;
-    width: 80%;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    backdrop-filter: blur(8px);
-    transition: transform 0.3s ease-in-out;
-}
-
-section:hover {
-    transform: scale(1.02);
-}
-
-section h2  {
-    font-size: 3rem;
-    color: #faf8fa;
-    margin-bottom: 15px;
-}
-
-article {
-    background-color: rgba(255, 255, 255, 0.2);
-    padding: 25px;
-    border-radius: 12px;
-    margin-top: 20px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
-    transition: all 0.3s ease-in-out;
-}
-
-article:hover {
-    background-color: rgba(255, 255, 255, 0.3);
-    transform: translateY(-5px);
-}
-
-article h3 {
-    font-size: 1.6rem;
-    color: #ffffff;
-    margin-bottom: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-article h3 i {
-    margin-right: 10px;
-    color: #e7c9e7;
-}
-
-article p {
-    font-size: 1.1rem;
-    color: #dcdcdc;
-    line-height: 1.6;
-    max-width: 800px;
-    margin: auto;
-}
-
-.Objective video {
-    width: 100%;
-    height: auto;
-    display: block;
-    margin: 20px auto;
-    border-radius: 20px; 
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); 
-}
-
-#Decore {
-    opacity: 0.5; 
-    height: auto;
-    width: 100%;
-    max-height: 315px;
-    margin-top: -115px;
-    margin-bottom: -125px;
-    display: block; 
-}
-@media (max-width: 600px) {
-    #Decore {
-        max-height: 200px; 
+    
+    .changing-word {
+        display: inline-block;
+        animation: vibrate 0.2s infinite, changeWord 4s infinite;
+        color: #e7c9e7;
     }
-}
-
-#SideDecore{
-     padding-right:310px;
-     max-height: 315px;
-     margin-top: -115px;
-     margin-bottom: -125px;
-     display: block; 
-}
-
-.Vision img {
-    width: 30%; 
-    height: auto;
-    margin: 10px; 
-    display: inline-block;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border-radius: 10px; 
-}
-
-
-.Vision img:hover {
-    transform: scale(1.05); 
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
-}
-
-.Services img{
-    width: 100%; 
-    height: auto;
-    margin: 10px; 
-    display: inline-block;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border-radius: 10px; 
-
-}
-.Services img:hover {
-    transform: scale(1.02); 
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
-}
-
-footer {
-    background-color: #1B2045;
-    padding: 20px;
-    text-align: center;
-    margin-top: 50px;
-    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.2);
-}
-footer p {
-    font-size: 1rem;
-    color: white;
-    font-weight: bold;
-    letter-spacing: 1px;
-}
- 
-
-.clients-content {
-    display: flex;
-    align-items: center;
-    gap: 30px;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.clients-content img {
-    width: 400px;
-    height: auto;
-    border-radius: 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-}
-
-.clients-content article {
-    flex: 1;
-    text-align: left;
-}
-
-
-.ChooseClientType h4   {
-    font-size: 1.5rem;
-    color: #ffffff;
-    margin-bottom: 15px;
-}
-
-/*GetStarted Forms */
-#Decore {
-    display: block;
-    margin: 0 auto;
-    width: 100%;
-    max-width: 1200px;
-    margin-bottom: 40px;
-    position: relative;
-    top: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-#SideDecore {
-    display: block;
-    margin: 0 auto;
-    width: 100%;
-    max-width: 1200px;
-    margin-bottom: 40px;
-    position: relative;
-    top: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-@media (max-width: 768px) {
-    #Decore,
-    #SideDecore {
-        max-width: 100%;
+    
+    /* Text change effect */
+    @keyframes changeWord {
+        0%, 30% {
+            content: "Feels";
+        }
+        35%, 65% {
+            content: "Talks";
+        }
+        70%, 100% {
+            content: "Communicates";
+        }
+    }
+    
+    .changing-word::after {
+        content: "Feels";
+        animation: changeWord 4s infinite;
+    }
+    
+    @media (max-width: 768px) {
+        header h5 {
+            font-size: 1rem;  
+            right: 5%;  
+        }
+    }
+    
+    header h1 {
+        font-size: 55px;
+        font-weight: bold;
+        position: absolute;
+        text-align: left;
+        top: 40%;
+        right: 40%;  
+        z-index: 2; 
+    }
+    
+    header p {
+        font-size: 1.3rem;
+        margin-top: 10px;
+        position: absolute;
+        text-align: center;
+        top: 60%;
+        right: 40%;  
+        left:40%;
+        z-index: 2; 
+    
+    }
+    
+    nav {
+        display: flex;
+        justify-content: center;
+        background-color: #1B2045;
+        padding: 15px 0;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    }
+    
+    nav a {
+        color: white;
+        font-size: 1.2rem;
+        text-decoration: none;
+        font-weight: bold;
+        padding: 10px 20px;
+        margin: 0 15px;
+        transition: all 0.3s ease-in-out;
+        border-radius: 5px;
+    }
+    
+    nav a:hover {
+        background-color: #a154a175;
+        color: #000000;
+    }
+    section {
+        padding: 60px 20px;
+        margin: 40px auto;
+        width: 80%;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 15px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        backdrop-filter: blur(8px);
+        transition: transform 0.3s ease-in-out;
+    }
+    
+    section:hover {
+        transform: scale(1.02);
+    }
+    
+    section h2  {
+        font-size: 3rem;
+        color: #faf8fa;
         margin-bottom: 15px;
-        top: 10px;
     }
-}
+    
+    article {
+        background-color: rgba(255, 255, 255, 0.2);
+        padding: 25px;
+        border-radius: 12px;
+        margin-top: 20px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+        transition: all 0.3s ease-in-out;
+    }
+    
+    article:hover {
+        background-color: rgba(255, 255, 255, 0.3);
+        transform: translateY(-5px);
+    }
+    
+    article h3 {
+        font-size: 1.6rem;
+        color: #ffffff;
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    article h3 i {
+        margin-right: 10px;
+        color: #e7c9e7;
+    }
+    
+    article p {
+        font-size: 1.1rem;
+        color: #dcdcdc;
+        line-height: 1.6;
+        max-width: 800px;
+        margin: auto;
+    }
+    
+    .Objective video {
+        width: 100%;
+        height: auto;
+        display: block;
+        margin: 20px auto;
+        border-radius: 20px; 
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); 
+    }
+    
+    #Decore {
+        opacity: 0.5; 
+        height: auto;
+        width: 100%;
+        max-height: 315px;
+        margin-top: -115px;
+        margin-bottom: -125px;
+        display: block; 
+    }
+    @media (max-width: 600px) {
+        #Decore {
+            max-height: 200px; 
+        }
+    }
+    
+    
+    
+    #SideDecore{
+         padding-right:310px;
+         max-height: 315px;
+         margin-top: -115px;
+         margin-bottom: -125px;
+         display: block; 
+    }
+    
+    .Vision img {
+        width: 30%; 
+        height: auto;
+        margin: 10px; 
+        display: inline-block;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        border-radius: 10px; 
+    }
+    
+    
+    .Vision img:hover {
+        transform: scale(1.05); 
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
+    }
+    
+    .Services img{
+        width: 100%; 
+        height: auto;
+        margin: 10px; 
+        display: inline-block;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        border-radius: 10px; 
+    
+    }
+    .Services img:hover {
+        transform: scale(1.02); 
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
+    }
+    
+    footer {
+        background-color: #1B2045;
+        padding: 20px;
+        text-align: center;
+        margin-top: 50px;
+        box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.2);
+    }
+    footer p {
+        font-size: 1rem;
+        color: white;
+        font-weight: bold;
+        letter-spacing: 1px;
+    }
+     
+    
+    .clients-content {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .clients-content img {
+        width: 400px;
+        height: auto;
+        border-radius: 20px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+    
+    .clients-content article {
+        flex: 1;
+        text-align: left;
+    }
+    
+    
+    .ChooseClientType h4   {
+        font-size: 1.5rem;
+        color: #ffffff;
+        margin-bottom: 15px;
+    }
+
 .MSRepresentativeForm,
 .StadiumAdminForm {
     width: 50%;
@@ -429,7 +401,7 @@ form textarea {
     width: 100%;
     padding: 8px;
     margin-top: 5px;
-    border: 1px solid #ccc;
+border: 1px solid #ccc;
     border-radius: 5px;
     background-color: rgba(255, 255, 255, 0.2);
     color: #ffffff;
@@ -449,19 +421,25 @@ select option {
 
 
 form input[type="submit"],
-form button {
+form button[type="button"] {
+    display: inline-block;
     width: 120px;
+    height: 40px; 
+    padding: 10px 0; 
     margin-top: 15px;
     background-color: #1B2045;
     color: white;
+    border: none;
     border-radius: 5px;
     font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s ease-in-out;
+    box-sizing: border-box; 
+    text-align: center;
 }
 
 form input[type="submit"]:hover,
-form button:hover {
+form button[type="button"]:hover {
     background-color: #e7c9e7;
     color: #000000;
 }
@@ -531,6 +509,5 @@ table a {
 }
 
 table a:hover {
-    text-decoration: underline;
+    text-decoration: underline;
 }
-

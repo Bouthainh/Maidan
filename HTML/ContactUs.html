@@ -33,7 +33,7 @@
      
          
          <!--A Form to collect the user information so they can contact with us -->
-         <form action="/submit" method="POST">
+         <form id="contact-form" action="http://localhost:3000/submit-contact" method="POST" novalidate>
              <div>
                  <label for="language">Language of Communication:</label>
                  <select id="language" name="language" required>
@@ -95,7 +95,6 @@
      
              <input type="submit" value="Submit">
          </form>
-     
          <img id="SideDecore" src="../Images/SideDecorePurple.png" alt="Side decore purple color">
      
      
@@ -103,5 +102,7 @@
              <img src="../Images/maidanlogo.PNG" alt="Maidan Logo ">
              <p>&copy; 2025 Maidan. All Rights Reserved.</p>
          </footer>
+
+         <script src="../JS/form-validation.js"></script>
      </body>
      </html>

@@ -16,7 +16,6 @@ providing both navigation to other sections and an overview of the website's obj
          <meta name="viewport" content="width=device-width, initial-scale=1.0">
          <link rel="stylesheet" href="../CSS/Style.css">
      </head>
-     
      <body>
          <!--Header -->
          <!-- display page purpose-->
@@ -48,7 +47,7 @@ providing both navigation to other sections and an overview of the website's obj
              <h3>Ministry of Sport Representative</h3>
              <details>
                  <summary>Ministry of Sport Representative</summary>
-                 <form method="get" action="#">
+                 <form id="rep-form" method="post" action="http://localhost:3001/submit-rep" novalidate>
                      <p> This form is for Ministry Representatives </p>
      
                      <label for="rep-name">Enter your Full Name:</label>
@@ -74,38 +73,36 @@ providing both navigation to other sections and an overview of the website's obj
              <h3>Stadium Administrator</h3>
              <details>
                  <summary>Stadium Administrator</summary>
-                 <form method="get" action="#">
-                     <p> This form is for Stadium Administrators </p>
-     
-                     <label for="admin-name">Enter your Full Name:</label>
-                     <input type="text" id="admin-name" name="admin-name" required minlength="7"
-                         pattern="^[A-Za-z\s]{7,50}$"
-                         title="Full Name must be at least 7 characters long and contain only letters and spaces"><br>
-     
-                     <label for="stadium-name">Enter Stadium Name:</label>
-                     <input type="text" id="stadium-name" name="stadium-name" required minlength="5"
-                         pattern="^[A-Za-z\s]{5,90}$"
-                         title="Stadium Name must be at least 5 characters long and contain only letters and spaces"><br>
-     
-                     <label for="email-admin">Enter your Email:</label>
-                     <input type="email" id="email-admin" name="email-admin" required
-                         pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"><br>
-     
-                     <label for="position">Please Select Your Position:</label>
-                     <select id="position" name="position" required>
-                         <option value="" disabled selected>Select your position</option>
-                         <!-- Manages staff, bookings, and overall stadium operations -->
-                         <option value="manager">Stadium Manager</option>
-                         <!-- Handles maintenance requests, technical and facility management -->
-                         <option value="operations">Operations Director</option>
-                     </select><br>
-     
-                     <input type="checkbox" id="admin-confirmation" name="admin-confirmation" value="admin-confirmation"
-                         required>
-                     <label for="admin-confirmation">* By selecting this option, I confirm that I am an <strong>official
-                             administrator</strong> and accept full responsibility for my actions</label><br>
-                     <input type="submit" value="Submit">
-                 </form>
+                 <form id="admin-form" action="http://localhost:3002/submit-admin" method="POST" novalidate>
+                    <p>This form is for Stadium Administrators</p>
+                
+                    <label for="admin-name">Enter your Full Name:</label>
+                    <input type="text" id="admin-name" name="fullName" required minlength="7"
+                        pattern="^[A-Za-z\s]{7,50}$"
+                        title="Full Name must be at least 7 characters long and contain only letters and spaces."><br>
+                
+                    <label for="stadium-name">Enter Stadium Name:</label>
+                    <input type="text" id="stadium-name" name="stadiumName" required minlength="5"
+                        pattern="^[A-Za-z\s]{5,90}$"
+                        title="Stadium Name must be at least 5 characters long and contain only letters and spaces."><br>
+                
+                    <label for="email-admin">Enter your Email:</label>
+                    <input type="email" id="email-admin" name="email" required
+                        pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+                        title="Enter a valid email address."><br>
+                
+                    <label for="position">Please Select Your Position:</label>
+                    <select id="position" name="position" required>
+                        <option value="" disabled selected>Select your position</option>
+                        <option value="manager">Stadium Manager</option>
+                        <option value="operations">Operations Director</option>
+                    </select><br>
+                
+                    <input type="checkbox" id="admin-confirmation" name="admin-confirmation" value="admin-confirmation" required>
+                    <label for="admin-confirmation">* By selecting this option, I confirm that I am an <strong>official administrator</strong> and accept full responsibility for my actions</label><br>
+                
+                    <input type="submit" value="Submit">
+                </form>                
              </details>
          </section>
      
@@ -115,8 +112,8 @@ providing both navigation to other sections and an overview of the website's obj
              <img src="../Images/maidanlogo.PNG" alt="Maidan Logo ">
              <p>&copy; 2025 Maidan. All Rights Reserved.</p>
          </footer>
-     
-     </body>
-     
+
+         <script src="../JS/form-validation.js"></script>
+     </body>     
      </html>
      
