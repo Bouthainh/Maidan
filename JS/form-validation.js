@@ -107,6 +107,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
                 if (result.success) {
                     alert("Message sent successfully!");
+                    const displayDiv = document.getElementById("contact-data");
+                    const userEntry = document.createElement("div");
+                    userEntry.innerHTML = `
+                    <p><strong>Name:</strong> ${firstName.value} ${lastName.value}</p>
+                    <p><strong>Email:</strong> ${email.value}</p>
+                    <p><strong>Message:</strong> ${message.value}</p>
+                    <hr>`;
+                    displayDiv.appendChild(userEntry);
                     contactForm.reset();
                 } else {
                     alert(result.message || "Submission failed. Please check your inputs.");
@@ -249,5 +257,11 @@ document.addEventListener("DOMContentLoaded", () => {
                 console.error("Error:", error);
             }
         });
-    }
+        }
+    const clearBtn = document.getElementById("clear-contact-display");
+    if (clearBtn) {
+        clearBtn.addEventListener("click", () => {
+             document.getElementById("contact-data").innerHTML = "";
+            });
+        }
 });

@@ -1,7 +1,7 @@
- <!-- This page serves as a contact us page, 
+<!-- This page serves as a contact us page, 
  to help the user to contact us whenever needed -->
 
- <!-- Maidan Group Memebrs:
+<!-- Maidan Group Memebrs:
      Dimah Aloufi | 2210094
      Bouthainh AlGarni | 2211249
      Gala AlRajhi | 2211312 
@@ -19,7 +19,6 @@
          <header>
              <img src="../Images/SubHeader2.png" alt="The Headr and Logo">
              <h1>Contact Us</h1>
-           
          </header>
      
          <nav>
@@ -31,7 +30,6 @@
      
          <img id="Decore" src="../Images/DecoreOrange.png" alt="Decore Orange color">
      
-         
          <!--A Form to collect the user information so they can contact with us -->
          <form id="contact-form" action="http://localhost:3000/submit-contact" method="POST" novalidate>
              <div>
@@ -87,7 +85,7 @@
                  <label for="email">Email Address:</label>
                  <input type="email" id="email" name="email"  pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required>
              </div><br> 
-         <!-- A Spact for the user to write down what they want -->
+     
              <div>
                  <label for="message">Message:</label> 
                  <textarea id="message" name="message" rows="5" required></textarea> 
@@ -95,14 +93,21 @@
      
              <input type="submit" value="Submit">
          </form>
-         <img id="SideDecore" src="../Images/SideDecorePurple.png" alt="Side decore purple color">
      
+         <section id="submitted-contact" style="margin-top: 20px; padding: 10px; border: 1px solid #ccc;">
+             <h3>Your Submitted Info:</h3>
+             <div id="contact-data"></div>
+             <button id="clear-contact-display">Clear Data</button>
+         </section>
+     
+         <img id="SideDecore" src="../Images/SideDecorePurple.png" alt="Side decore purple color">
      
          <footer>
              <img src="../Images/maidanlogo.PNG" alt="Maidan Logo ">
              <p>&copy; 2025 Maidan. All Rights Reserved.</p>
          </footer>
-
+     
          <script src="../JS/form-validation.js"></script>
      </body>
      </html>
+     

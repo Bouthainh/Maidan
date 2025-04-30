@@ -511,3 +511,43 @@ table a {
 table a:hover {
     text-decoration: underline;
 }
+#contact-data {
+    margin: 30px auto;
+    padding: 20px;
+    width: 60%;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: left;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+#contact-data div {
+    margin-bottom: 15px;
+    border-bottom: 1px solid #e7c9e7;
+    padding-bottom: 10px;
+}
+
+#contact-data p {
+    font-size: 1rem;
+    margin: 5px 0;
+}
+
+#clear-contact-display {
+    display: block;
+    margin: 0 auto 30px auto;
+    padding: 10px 20px;
+    background-color: #e7c9e7;
+    color: #1B2045;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#clear-contact-display:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
